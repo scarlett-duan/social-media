@@ -1,6 +1,7 @@
 import os
 
 ini_folder = './ximalaya_data/'
+filename = ''
 for i in range(1, 6):
     try:
         foldername = ini_folder + str(i) + '_upload/2_audio/'
@@ -9,3 +10,4 @@ for i in range(1, 6):
         os.system(cmd)
     except Exception as err:
         print(err)
+        print("file name: " + filename)
